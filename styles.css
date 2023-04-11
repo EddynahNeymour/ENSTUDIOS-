@@ -4,12 +4,12 @@
 }
 
 body.about{
-	 background-image: url("Project.png");
+	 background-color: #a69587;
 	 color: white;
 }
 
 body.project{
-	 background-color: black;
+	 background-color: #a69587;
 	 color: white;
 }
 
