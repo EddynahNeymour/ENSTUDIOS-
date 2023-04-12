@@ -93,8 +93,7 @@
 		  
 	     <h1> CONTACT FORM </h1>
 		 
-		 <form name="myForm" action= "/file.php" onsubmit="return
-	   validateForm()" method="post">
+		 <form name="myForm" onsubmit="return validateForm()" method="post">
 	      <table class="form-style">
 		     <tr>
 			     <td>
@@ -136,8 +135,13 @@
 					 <input type="reset" value="Reset">
 				 </td>
 			 </tr>
-		   </table>
-		 </form>
+		  </table>
+	     </form>
+	     <form action="http://formspree.io/e_neymour@outlook.com">
+		     <input type="email" name="_replyto">
+		     <textarea name="body"></textarea>
+		     <input type="submit" value="Send">
+	     </form>
 	  </body>
 </html>
 					 
