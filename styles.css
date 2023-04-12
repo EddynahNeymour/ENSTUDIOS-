@@ -13,6 +13,11 @@ body.about{
 	color: white;
 }
 
+body.contact{
+	background-image: url("Contact@ENSTUDIO.png");
+	color: white;
+}
+	
 a{
 	color: white;
 	text-decoration: none;
