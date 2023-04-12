@@ -3,6 +3,14 @@
 	 color: white;
 }
 
+body.project{
+	backgroung-image: url("Project@ENStudio.png);
+}
+
+body.about{
+	background-image: url("About@ENStudio.png")
+}
+
 a{
 	color: white;
 	text-decoration: none;
