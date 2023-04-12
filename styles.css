@@ -4,12 +4,12 @@
 }
 
 body.project{
-	background-image: url("Project@ENStudio.png);
+	background-color: black;
 	color: white;
 }
 
-body.aboutp{
-	background-image: url("About@ENStudio.png");
+body.about{
+	background-color: black;
 	color: white;
 }
 
