@@ -5,10 +5,12 @@
 
 body.project{
 	background-image: url("Project@ENStudio.png);
+	color: white
 }
 
 body.aboutp{
-	background-image: url("About@ENStudio.png")
+	background-image: url("About@ENStudio.png");
+	color: white;
 }
 
 a{
