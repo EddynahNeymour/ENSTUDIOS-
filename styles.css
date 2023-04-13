@@ -23,6 +23,11 @@ a{
 	text-decoration: none;
 }
 
+body.achievements{
+	 background-image: url("Achievements@ENStudios.png");
+	 color:white;
+}
+
 a:hover{
 	color: white;
 	background: brown;
