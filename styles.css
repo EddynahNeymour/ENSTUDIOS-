@@ -17,21 +17,21 @@ body.contact{
 	background-image: url("Contact@ENStudio.png");
 	color: white;
 }
+
+body.achievements{
+	 background-image: url("Achievements@ENStudio.png");
+	 color:white;
+}
 	
 a{
 	color: white;
 	text-decoration: none;
 }
 
-body.achievements{
-	 background-image: url("Achievements@ENStudio.png");
-	 color:white;
-}
-
 a:hover{
 	color: white;
 	background: brown;
-}}
+}
 
 h1{
 	font-family: monospace;
