@@ -1,0 +1,212 @@
+<html>
+     <head>
+	     <title>Achievements</title>
+		 
+		 <link rel="stylesheet"
+		     type="text/css"
+			 href="bootstrap.css"
+			/>
+			 
+		 <link rel="stylesheet"
+		     type="text/css"
+			 href="styles.css"
+			/>
+			
+     	 <link rel="apple-touch-icon"
+	         sizes="180x180" 
+	         href="/apple-touch-icon.png"
+			/>
+	
+         <link rel="icon" 
+	          type="image/png" 
+	          sizes="32x32"
+	          href="/favicon-32x32.png"
+			/>
+	
+         <link rel="icon" 
+	          type="image/png" 
+	          sizes="16x16" 
+	          href="/favicon-16x16.png"
+			/>
+
+	     <link rel="manifest" 
+	          href="/site.webmanifest"
+			/>
+	 </head>
+	 <body class="achievements">
+	     <ul>
+		     <li> <img src="favicon.ico"/> </li>
+			 <li> <a href="index.html">&nbsp&nbsp&nbspHOME</a> </li>
+		     <li> <a href="project.html">&nbsp&nbsp&nbspPROJECTS</a> </li>
+		     <li> <a href="about.html">&nbsp&nbsp&nbspABOUT ME</a> </li>
+		     <li> <a href="Contact.html">&nbsp&nbsp&nbspCONTACT</a> <li>
+		     <li> <a href="achievements.html">&nbsp&nbsp&nbspPROFESSIONAL ACHIEVEMENTS</a> </li>
+		 </ul>
+		 
+		 <h2> Hover over image to see description</h2>
+		 
+		  <div class="container">
+             <ul class="gallery">
+              <li>
+                 <div class="flip">
+                     <div class="front-side"></div>
+                         <div class="back-side">
+                             <a>
+                            <div class="content">
+                            <div class="loader"></div>
+                            <div class="text">
+                              <h3>Computer Programming</h3>
+                              <p>Material Covered: </p>
+                            </div>
+                            </div>
+                            </a>
+                        </div>
+               </div>
+             </li>
+             <li>
+                 <div class="flip">
+                     <div class="front-side"></div>
+                       <div class="back-side">
+                         <a>
+                       <div class="content">
+                       <div class="loader"></div>
+                       <div class="text">
+                          <h3>Google IT Support Certification</h3>
+                          <p>Courses: </p>
+					   </div>
+                       </div>
+                        </a>
+                      </div>
+                 </div>
+             </li>
+			 <li>
+                 <div class="flip">
+                     <div class="front-side"></div>
+                     <div class="back-side">
+                         <a>
+                     <div class="content">
+                     <div class="loader"></div>
+                     <div class="text">
+                         <h3>Business & Marketing Strategies</h3>
+                         <p>Courses: </p>
+					 </div>
+                     </div>
+                        </a>
+                    </div>
+                 </div>
+             </li>
+		     <li>
+                 <div class="flip">
+                     <div class="front-side"></div>
+                     <div class="back-side">
+                         <a>
+                     <div class="content">
+                     <div class="loader"></div>
+                     <div class="text">
+                         <h3>Skyscanner</h3>
+                         <p>Job Description: </p>
+					 </div>
+                     </div>
+                         </a>
+                    </div>
+                 </div>
+              </li>
+		     </ul>
+		  </div>
+		 <script>
+		 var Gallery = (function() {
+         var colors = ['#34495E', '#2E4053', '#283747', '#212F3C', '#1B2631', '#2C3E50', '#273746'];
+         var scrollTimeId;
+         var posLeft = 0;
+
+         function Gallery(config) {
+         this.list = $(config.list);
+         this.items = this.list.find('li');
+         this.itemWidth = this.items.outerWidth();
+         };
+
+         Gallery.prototype = {
+         constructor: Gallery,
+
+         init: function() {
+            this.setGalleryWidth();
+            this.setItemsColor();
+            this.eventManager();
+
+            return this;
+         },
+
+         eventManager: function() {
+            var _this = this;
+
+            $("html, body").on('mousewheel', function(event) {
+                clearTimeout(scrollTimeId);
+                scrollTimeId = setTimeout(onScrollEventHandler.bind(this, event, _this.itemWidth), 0);
+            });
+         },
+
+         getRandomColor: function() {
+            return colors[Math.floor(Math.random() * colors.length)];
+         },
+
+         setItemsColor: function() {
+            var _this = this;
+
+            $.each(this.items, function(index, item) {
+                 item.style.backgroundColor = _this.getRandomColor();
+            });
+         },
+
+         setGalleryWidth: function() {
+            this.list.css('width', this.getGalleryWidth());
+         },
+
+         getGalleryWidth: function() {
+            var width = 0;
+
+            this.items.each(function(index, item) {
+                width += $(this).outerWidth();
+            });
+
+            return width;
+         }
+         };
+
+         function onScrollEventHandler(event, width) {
+         if (event.deltaY > 0) {
+         this.scrollLeft -= width / 2;
+         } else {
+         this.scrollLeft += width / 2;
+         }
+ 
+         // Firefox, please, stop it
+         // if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+         //    if (event.originalEvent.detail > 0) {
+         //        posLeft += width / 2;
+         //        $('html').scrollLeft(posLeft);
+         //    } else {
+         //        posLeft -= width / 2;
+         //        $('html').scrollLeft(posLeft);
+         //    }
+         // } else {
+         //    if (event.originalEvent.wheelDelta > 0)  {
+         //        this.body.scrollLeft -= width / 2;
+         //    } else {
+         //        this.body.scrollLeft += width / 2;
+         //    }
+         // }
+         event.preventDefault();
+         };
+
+         return Gallery;
+         })();
+
+
+         $(document).ready(function() {
+         var gallery = new Gallery({
+         list: '.gallery'
+         }).init();
+         });
+		</script>
+	  </body>
+</html>
