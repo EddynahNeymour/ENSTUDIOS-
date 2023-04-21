@@ -214,7 +214,7 @@ li a:hover {
 }
 
 .gallery li:nth-child(1) .front-side {
-  background-image:url('CP@ENStudio.jpg');
+  background-image:url('CP.png');
 }
 .gallery li:nth-child(1) .loader {
   border-top-color: #F39C12;
@@ -228,7 +228,7 @@ li a:hover {
 }
 
 .gallery li:nth-child(2) .front-side {
-  background-image: url('GIS@ENStudio.png');
+  background-image: url('IT.png');
 }
 .gallery li:nth-child(2) .loader {
   border-top-color: #F39C12;
@@ -242,7 +242,7 @@ li a:hover {
 }
 
 .gallery li:nth-child(3) .front-side {
-  background-image: url('BM@ENStudio.png');
+  background-image: url('BM.png');
 }
 .gallery li:nth-child(3) .loader {
   border-top-color: #F39C12;
@@ -256,7 +256,7 @@ li a:hover {
 }
 
 .gallery li:nth-child(4) .front-side {
-  background-image: url('Sky@ENStudio.png');
+  background-image: url('Sky.png');
 }
 .gallery li:nth-child(4) .loader {
   border-top-color: #F39C12;
