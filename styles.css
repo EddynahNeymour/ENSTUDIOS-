@@ -214,7 +214,7 @@ li a:hover {
 }
 
 .gallery li:nth-child(1) .front-side {
-  background-image:url('CP@ENStudio.png');
+  background-image:url('CP@ENStudio.jpg');
 }
 .gallery li:nth-child(1) .loader {
   border-top-color: #F39C12;
