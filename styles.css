@@ -1,11 +1,6 @@
 ﻿/*Webpage backgrounds*/
 body.Video{
-     background: url("video@ENStudio.mp4");
-     position: static;
-     left: 0;
-     right: 0;
-     top: 0;
-     bottom: 0;
+     background: url("Homepage@ENStudio.png");
 }
 
 body.project{
@@ -101,7 +96,7 @@ li a {
 }
 
 li a:hover {
-  background-color: #886752;
+  background-color: red;
 }
 
 
