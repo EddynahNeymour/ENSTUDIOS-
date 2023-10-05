@@ -9,16 +9,11 @@ body.project{
 
 body.about{
 	 background-image: url("About@ENStudio.png");
-}
-
-body.contact{
-	 background-image: url("Contact@ENStudio.png");
-	 color: black;
-}
+} 
 
 body.achievements{
 	 background-image: url("Achievement@ENStudio.png");;
-     color: black;
+     color: white;
 }
 
  a {
@@ -143,7 +138,7 @@ li a:hover {
   float: left;
   height: 100%;
   width: 279px;
-  background: #2E4053;
+  background: red;
 }
 .gallery .flip {
   height: 100%;
@@ -212,8 +207,8 @@ li a:hover {
   background-image:url('CP.png');
 }
 .gallery li:nth-child(1) .loader {
-  border-top-color: #F39C12;
-  border-left-color: #F39C12;
+  border-top-color: #000000;
+  border-left-color: #000000;
 }
 .gallery li:nth-child(1) .text h3 {
   color: black;
@@ -226,8 +221,8 @@ li a:hover {
   background-image: url('IT.png');
 }
 .gallery li:nth-child(2) .loader {
-  border-top-color: #F39C12;
-  border-left-color: #F39C12;
+  border-top-color: #000000;
+  border-left-color: #000000;
 }
 .gallery li:nth-child(2) .text h3 {
   color: black;
@@ -240,8 +235,8 @@ li a:hover {
   background-image: url('BM.png');
 }
 .gallery li:nth-child(3) .loader {
-  border-top-color: #F39C12;
-  border-left-color: #F39C12;
+  border-top-color: #000000;
+  border-left-color: #000000;
 }
 .gallery li:nth-child(3) .text h3 {
   color: black;
@@ -254,8 +249,8 @@ li a:hover {
   background-image: url('Sky.png');
 }
 .gallery li:nth-child(4) .loader {
-  border-top-color: #F39C12;
-  border-left-color: #F39C12;
+  border-top-color: #000000;
+  border-left-color: #000000;
 }
 .gallery li:nth-child(4) .text h3 {
   color: black;
@@ -308,7 +303,7 @@ li a:hover {
   bottom: -10px;
   left: 50%;
   margin-left: -25px;
-  background: #85C1E9;
+  background: red;
 }
 .gallery .content p {
   margin: 10px 0;
