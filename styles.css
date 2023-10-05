@@ -23,9 +23,6 @@ body.about{
 body.achievements{
 	 background-image: url("Achievement@ENStudio.png");
          position: fixed;
-	 width: 100%;
-	 height: 100%;
-         background-size: contain;
          color: white;
 }
 
