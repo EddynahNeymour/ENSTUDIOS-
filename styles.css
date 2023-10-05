@@ -1,5 +1,5 @@
 ﻿/*Webpage backgrounds*/
-body.Video{
+body.home{
      background: url("Homepage@ENStudio.png");
      background-repeat: no-repeat;
      position: fixed;
@@ -8,36 +8,34 @@ body.Video{
 body.project{
 	 background-image: url("Project@ENStudio.png");
 	 background-repeat: no-repeat;
+   background-position: center; 
 	 position: fixed;
 }
 
 body.about{
 	 background-image: url("About@ENStudio.png");
 	 background-repeat: no-repeat;
-	 position: fixed;
+   background-size: cover;  
+   background-position: center; 
+
 } 
 
 body.achievements{
 	 background-image: url("Achievement@ENStudio.png");
-	 position: fixed;
 	 background-repeat: no-repeat;
+   background-position: center; 
+   color: #D6DBDF;
 }
 
  a {
      text-decoration: none;
-     color: black;
+     color: white;
 }
 
 p{
-	 font-family: Lucida, san-serif;
-	 font-size: 20px;
-	 color: white;
-}
-
-h1{
 	 font-family: monospace;
-	 font-size: 30pt;
-	 color: red;
+	 font-size: 30px;
+	 color: white;
 }
 
 h2{
@@ -45,7 +43,7 @@ h2{
 	 font-size: 16pt;
 	 color: white;
 	 padding-top: 15px;
-	 padding-left: 400px;
+	 padding-left: 20px;
 }
 
 .thin_border{
@@ -88,7 +86,6 @@ ul{
 li {
   float: left;
 }
-
 li a {
   display: block;
   color: white;
@@ -104,12 +101,35 @@ li a:hover {
 
 @media screen and (max-width: 800px) {
   .column {
+    flex-shrink: 50%;
+    max-width: 50%;
+  }
+  .gallery {
+    flex-shrink: 50%;
+  }
+  ul {
+	  flex-shrink: 80%;
+	  max-width: 70%
+  }
+  h2 {
+	  flex-shrink: 80%;
+	  max-width: 90%
+  }
+  body.about {
     flex: 50%;
     max-width: 50%;
   }
-  ul {
-	  flex: 50%;
-	  max-width: 50%
+  body.home {
+    flex-shrink: 50%;
+    max-width: 50%;
+  }
+  body.achievements {
+    flex-shrink: 50%;
+    max-width: 50%;
+  }
+  body.project {
+    flex-shrink: 50%;
+    max-width: 50%;
   }
 }
 .button {
@@ -145,7 +165,8 @@ li a:hover {
   float: left;
   height: 100%;
   width: 279px;
-  background: white;
+  background: black;
+  padding-left: 10px;
 }
 .gallery .flip {
   height: 100%;
@@ -166,7 +187,7 @@ li a:hover {
   transform: rotateY(180deg);
 }
 .gallery li:hover .back-side {
-  background: white;
+  background: black;
   opacity: 1;
   -webkit-transform: rotateY(0deg);
   -moz-transform: rotateY(0deg);
@@ -184,9 +205,9 @@ li a:hover {
   -moz-backface-visibility:  hidden;
   backface-visibility:  hidden;
 
-  -webkit-transition: transform 0.10s ease-out, opacity 0.10s ease-out;
-  -moz-transition: transform 0.10s ease-out, opacity 0.10s ease-out;
-  transition: transform 0.10s ease-out, opacity 0.10s ease-out;
+  -webkit-transition: transform 0.5s ease-out, opacity 0.6s ease-out;
+  -moz-transition: transform 0.5s ease-out, opacity 0.6s ease-out;
+  transition: transform 0.5s ease-out, opacity 0.6s ease-out;
 }
 .gallery .front-side {
   opacity: 1;
@@ -268,7 +289,7 @@ li a:hover {
 
 .gallery .content {
   text-align: center;
-  position: relative;
+  position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -310,7 +331,7 @@ li a:hover {
   bottom: -10px;
   left: 50%;
   margin-left: -25px;
-  background: red;
+  background: white;
 }
 .gallery .content p {
   margin: 10px 0;
