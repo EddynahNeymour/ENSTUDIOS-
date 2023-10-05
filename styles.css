@@ -24,19 +24,19 @@ body.achievements{
 p{
 	 font-family: Lucida, san-serif;
 	 font-size: 20px;
-	 color: black;
+	 color: white;
 }
 
 h1{
 	 font-family: monospace;
 	 font-size: 30pt;
-	 color: black;
+	 color: red;
 }
 
 h2{
 	 font-family: monospace;
 	 font-size: 16pt;
-	 color: black;
+	 color: white;
 	 padding-top: 15px;
 	 padding-left: 400px;
 }
