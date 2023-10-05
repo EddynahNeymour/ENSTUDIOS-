@@ -2,20 +2,25 @@
 body.Video{
      background: url("Homepage@ENStudio.png");
      position: fixed;
-     background-size: contain;
 }
 
 body.project{
 	 background-image: url("Project@ENStudio.png");
+	 position: fixed;
+         background-size: contain;
 }
 
 body.about{
 	 background-image: url("About@ENStudio.png");
+	 position: fixed;
+         background-size: contain;
 } 
 
 body.achievements{
-	 background-image: url("Achievement@ENStudio.png");;
-     color: white;
+	 background-image: url("Achievement@ENStudio.png");
+         position: fixed;
+         background-size: contain;
+         color: white;
 }
 
  a {
